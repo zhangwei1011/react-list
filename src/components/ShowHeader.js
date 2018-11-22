@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Clock from './Clock'
 
 class Header extends Component {
     constructor() {
@@ -41,7 +42,7 @@ class ShowHeader extends Component {
     render() {
         return (
             <div>
-               {this.state.isShowHeader ? <Header /> : null}
+                {this.state.isShowHeader ? <Clock /> : null}
                <button onClick={this.handleShowOrHide.bind(this)}>显示或者隐藏标题</button>
             </div>
         )
